@@ -1,3 +1,11 @@
+// Time Complexity : O(n * W) --> n is size of the value array, W is size of weights 
+// Space Complexity :
+// Did this code successfully run on Leetcode : 
+// Any problem you faced while coding this : Figuring out efficient algorithm
+
+
+// Your code here along with comments explaining your approach
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
