@@ -2,7 +2,7 @@
 //Space Complexity:  O(N*W)  -- fill  throwing the Knapsack array
 
 class Solution {
-    public int knapsack(int[] coins, int amount) {
+    public int knapsack(int W, int[] wt, int[] val int n) {
     
        
         /*
@@ -33,7 +33,7 @@ class Solution {
         // Return the maximum of two cases:  
         // (1) nth item included  
         // (2) not included 
-        else return max( val[n-1] + knapSack(W-wt[n-1], wt, val, n-1), 
+        else return Math.max( val[n-1] + knapSack(W-wt[n-1], wt, val, n-1), 
                          knapSack(W, wt, val, n-1) 
                           );      
     }
