@@ -14,6 +14,7 @@ K[n+1][W+1]
  	3 0                            220 
 
 K[3][50] = max(val[2]+k[2][20],k[2][50])
+         = max(120+100, 160)
          = max(220,160)
          =220
 
@@ -22,6 +23,17 @@ K[3][50] = max(val[2]+k[2][20],k[2][50])
 
 class Knapsack 
 {            
+		static int knapSackRecursive(int W, int wt[], int val[], int n)
+		{
+			if(n==0||W==0)
+				return 0;
+			if(wt[n-1]>W) //if wt is greater max allowed weight, do not include item in Knapsack
+				return knapSackRecursive(W,wt,val,n-1);
+			else
+				//find what the max achievable value is -> max of including and excluding current wt
+				return Math.max(val[n-1]+knapSackRecursive(W-wt[n-1],wt,val,n-1),knapSackRecursive(W,wt,val,n-1));
+		}
+	
 	    static int knapSack(int W, int wt[], int val[], int n) 
 	    { 
 	         int i, w; 
@@ -53,5 +65,6 @@ class Knapsack
     int  W = 50; 
     int n = val.length; 
     System.out.println(knapSack(W, wt, val, n)); 
+    System.out.println(knapSackRecursive(W, wt, val, n)); 
     } 
 } 
