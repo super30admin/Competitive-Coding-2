@@ -17,7 +17,7 @@ public class Problem2 {
 				if(weight[i-1]<=j) {
 				dp[i][j]= Math.max(dp[i-1][j], value[i-1]+ dp[i-1][j-weight[i-1]]);
 				}else {
-					dp[i][j]= dp[i-1][w];
+					dp[i][j]= dp[i-1][j];
 				}
 			}
 		}
