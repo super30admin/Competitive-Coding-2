@@ -1,4 +1,6 @@
 // A Dynamic Programming based solution for 0-1 Knapsack problem 
+//Time Complexity:O(n*W)
+//Space Complexity:O(n*W)
 class Knapsack 
 { 
   
