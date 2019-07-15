@@ -1,4 +1,6 @@
 //Recursive solution to the problem.
+//Time complexity: don't know, might be in exponential due to calcualting same subproblmes multiple times
+// Space Complexity: O(1)
 class Knapsack 
 { 
  
