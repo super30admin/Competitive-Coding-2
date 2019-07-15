@@ -1,3 +1,16 @@
+// Time Complexity : O(n) --> Iterate through the entire array once 
+// Space Complexity : O(n) --> Hashmaps
+// Did this code successfully run on Leetcode : Yes
+// Any problem you faced while coding this : Figuring out efficient algorithm
+
+
+// Your code here along with comments explaining your approach
+
+/*
+1. Create a hashmap with complement as the key and value as the index
+2. Return the vector that stores list of index when key is matched
+*/
+
 #include <iostream>
 #include <algorithm>
 #include <vector>
