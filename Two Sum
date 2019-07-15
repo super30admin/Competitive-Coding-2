@@ -1,0 +1,13 @@
+class Solution:
+    # Idea is to use the hashmap and store the value and index in it. If we encounter a value in hashmap which make a pair with current value to get the target. We get our solution.
+    # Time Complexity: O(n)
+    # Space Complexity: O(n)
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        hmap = {}
+        for i in range(len(nums)):
+            if target-nums[i] not in hmap:
+                hmap[nums[i]] = i
+            else:
+                return [i,hmap[target-nums[i]]]
+                
+        
