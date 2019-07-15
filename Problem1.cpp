@@ -7,7 +7,7 @@ using namespace std;
 
 class Solution{
 public:
-    vector<int> prob(vector<int>& nums, int target){
+    vector<int> twoSum(vector<int>& nums, int target){
         unordered_map<int, int> mp; 
         vector<int> returnValue;
         
@@ -29,6 +29,6 @@ public:
 int main(){
     Solution s;
     vector<int> vec{2,7,11,15};
-    cout<<s.prob(vec,9).at(1)<<endl;
+    cout<<s.twoSum(vec,9).at(1)<<endl;
     return 0;
 }
