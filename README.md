@@ -7,6 +7,6 @@ Input:
    int W = 50;
 Output: 220
 ## Brute Force Solution (Recursion) Explanation
-<img src= "https://imgur.com/a/XYpRSt0" width=500><br>
+<img src= "https://imgur.com/a/XYpRSt0" width=250><br>
 ## Optimized Solution (Dynamic Programming) Explanation
-<img src= "https://imgur.com/a/pXbEL3c" width=500><br>
+<img src= "https://imgur.com/a/pXbEL3c" width=250><br>
