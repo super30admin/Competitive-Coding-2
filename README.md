@@ -1,0 +1,12 @@
+# Competitive_Coding_2
+## KnapSack Problem
+Given weights and values of n items, put these items in a knapsack of capacity W to get the maximum total value in the knapsack. In other words, given two integer arrays val[0..n-1] and wt[0..n-1] which represent values and weights associated with n items respectively. Also given an integer W which represents knapsack capacity, find out the maximum value subset of val[] such that sum of the weights of this subset is smaller than or equal to W. You cannot break an item, either pick the complete item, or don’t pick it (0-1 property).
+Input:
+   int val[] = {60, 100, 120};
+   int wt[] = {10, 20, 30};
+   int W = 50;
+Output: 220
+## Brute Force Solution (Recursion) Explanation
+<img src= "https://imgur.com/a/XYpRSt0" width=500><br>
+## Optimized Solution (Dynamic Programming) Explanation
+<img src= "https://imgur.com/a/pXbEL3c" width=500><br>
