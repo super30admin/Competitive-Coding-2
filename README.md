@@ -7,6 +7,6 @@ Input:
    int W = 50;
 Output: 220
 ## Brute Force Solution (Recursion) Explanation
-<img src= "https://imgur.com/a/XYpRSt0" width=250><br>
+![Test Image 4](https://github.com/Abhinav-Balasubramanian/Competitive_Coding_2/blob/master/Knapsack%20Brute%20Force%20Solution%20explanation%20and%20recursive%20tree.jpeg)
 ## Optimized Solution (Dynamic Programming) Explanation
 <img src= "https://imgur.com/a/pXbEL3c" width=250><br>
