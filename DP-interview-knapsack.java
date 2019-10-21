@@ -1,6 +1,6 @@
-//Knapsack Problem
-//Time: O(n)
-//Space: O(n)
+//Knapsack Problem DP approach
+//Time: O(m x n)
+//Space: O(m x n)
 
 import java.io.*;
 
