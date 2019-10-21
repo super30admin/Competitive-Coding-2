@@ -14,5 +14,5 @@ class Solution {
 
 TC:O(N)
 SC:O(N)
-Accpeted on leetcode
+Accepted on leetcode
 used hashmap with one pass 
