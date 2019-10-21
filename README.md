@@ -10,3 +10,6 @@ Output: 220
 ![Test Image 4](https://github.com/Abhinav-Balasubramanian/Competitive_Coding_2/blob/master/Knapsack%20Brute%20Force%20Solution%20explanation%20and%20recursive%20tree.jpeg)
 ## Optimized Solution (Dynamic Programming) Explanation
 ![Test Image 5](https://github.com/Abhinav-Balasubramanian/Competitive_Coding_2/blob/master/Knapsack%20Dynamic%20Programming%20and%20optimized%20solution%20explanation.jpeg)
+## Two Sums Problem
+## Explanations for the two methods
+![Test Image 5](https://github.com/Abhinav-Balasubramanian/Competitive_Coding_2/blob/master/Two%20Sum%20solution%20explanation.jpeg)
