@@ -3,8 +3,29 @@ from typing import List
 
 class Solution:
 
-    def knapsack_0_1_problem(self, weights: List[int], values: List[int], capacity: int):
+    def knapsack_0_1_problem(self, weights: List[int], values: List[int], capacity: int) -> int:
+        """
+            // Time Complexity : O(mn)
+                        'm' is the no.of items and 'n' is the capacity
+            // Space Complexity : O(mn)
+            // Did this code successfully run on Leetcode : N/A
+            // Any problem you faced while coding this : No
+            // Three line explanation of solution in plain english :
+                    - For a given a capacity, we make a choice
+                      to choose the the current item or don't choose
+                      the current item
+                    - Each sub problems has the optimal answer to the question,
+                      if I have the given items with their weights and values and
+                      a capacity what is the maximum value I can acheive.
+                    - The final sub problem has the answer to the overall solution
+                      for a given list of items and the knapsack capacity.
+        """
 
+        # edge case
+        if not weights or not values or capacity <= 0:
+            return 0
+
+        # not required but to avoid confusion with indexes
         weights.insert(0, 0)
         values.insert(0, 0)
 
@@ -35,7 +56,14 @@ class Solution:
         """
             // Time Complexity : O(2^n) For each item we have two choices
             // Space Complexity : O(m/n) 'm' is the capacity, 'n' is the least weight
+            // Any problem you faced while coding this :
+                        Missed an the case when ## cap - weights[item] < 0 ##
+                        and we need to skip the item
         """
+        # edge case
+        if not weights or not values or capacity <= 0:
+            return 0
+
         return self._helper(weights, values, capacity, 0, 0)
 
     def _helper(self, weights: List[int], values: List[int], capacity: int, item: int, sum: int):
@@ -70,3 +98,7 @@ if __name__ == '__main__':
     values = [2, 1, 10]
     print(h.knapsack_0_1_problem_brute_force(weights, values, 30))
     print(h.knapsack_0_1_problem(weights, values, 30))
+    print(h.knapsack_0_1_problem(weights, values, -10))
+    print(h.knapsack_0_1_problem(weights, values, 0))
+    print(h.knapsack_0_1_problem_brute_force(weights, values, -10))
+    print(h.knapsack_0_1_problem_brute_force(weights, values, 0))
