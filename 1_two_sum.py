@@ -112,3 +112,4 @@ if __name__ == '__main__':
     print(h.two_sum_two_pointers([2, 7, 11, 15], 9))
     print(h.two_sum_binary_search([3, 2, 4], 6))
     print(h.two_sum_binary_search([-100, 54, 32, 532], -46))
+    print(h.two_sum_binary_search([-1, -1, 1, 2], -1))
