@@ -55,7 +55,7 @@ class Solution:
     def knapsack_0_1_problem_brute_force(self, weights: List[int], values: List[int], capacity: int):
         """
             // Time Complexity : O(2^n) For each item we have two choices
-            // Space Complexity : O(m/n) 'm' is the capacity, 'n' is the least weight
+            // Space Complexity : If recursion space is considered, O(m+n) 'm' is the capacity, 'n' is the least weight
             // Any problem you faced while coding this :
                         Missed an the case when ## cap - weights[item] < 0 ##
                         and we need to skip the item
