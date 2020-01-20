@@ -1,5 +1,3 @@
-package com.BigN;
-
 //Time complexity is O(n^2) as two loops are used
 //Space complexity is O(n) as we are using additional hashmap
 //this solution is submitted on Leetcode
