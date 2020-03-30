@@ -1,3 +1,5 @@
+//time - O(amount * number of items)
+//space - O(amount * number of items)
 class Main {
   public static void main(String[] args) {
     int val[] = new int[]{60, 100, 120};
