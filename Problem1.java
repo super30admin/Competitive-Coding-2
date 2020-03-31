@@ -6,6 +6,7 @@
 
 
 // Your code here along with comments explaining your approach
+// Used recurrence realation:- T(c,w) = t(c,w-1) + t(c-1,w-1) 
 class Knapsack{
     private static int knapsack(int[] value, int[] weights, int capacity) {
         //edge case
