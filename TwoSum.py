@@ -1,6 +1,10 @@
+# Time Complexity : O(n)
+# Space Complexity : O(n) for the dictionary
+# Did this code successfully run on Leetcode : yes
+# Any problem you faced while coding this :
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
-        result = []
         dictChecker = {}
 
         for index, number in enumerate(nums):
