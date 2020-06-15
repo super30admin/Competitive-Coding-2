@@ -8,20 +8,17 @@ class Solution:
         count=0
         
         while (j<len(nums)):  
-            if i==j:
+            if nums[j]-nums[i]<k or i==j:
                 j+=1
-                
-            elif nums[j]-nums[i]==k and nums[j]!=nums[i]:
+            
+            elif nums[j]-nums[i]>k:
+                i+=1
+            
+            elif nums[j]-nums[i]==k:
                 i+=1
                 j+=1
                 count+=1
-            elif nums[j]-nums[i]==k and nums[j]==nums[i]:
-                i+=1
-                j+=1
-                count=1
-            elif nums[j]-nums[i]>k:
-                i+=1
-            elif nums[j]-nums[i]<k:
-                j+=1
+                while j<len(nums) and nums[j]==nums[j-1]:
+                    j+=1
             
         return count
