@@ -1,7 +1,7 @@
 //TC: O(w*c), w: number of weights given, c: capacity
 //SC: O(w*c)
 // Approach:
-//1. Brute force will be to build a tree with two child nodes of every node will be whether we take the first weight in the array or not.
+//1. Brute force will be to build a tree with two child nodes of every node, corresponding to whether we take the first weight in the array or not.
 //2. We see repeated subproblems, and hence can optimize it with DP.
 //3. 2-D matrix, dp will store the maximum profit possible provided the capacity at any given point of time.
 //4. We build dp[][] with size of (number of weights * capacity), capacity varying from 0 to the given capacity in input.
