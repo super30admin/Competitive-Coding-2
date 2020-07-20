@@ -6,7 +6,7 @@
 //1. We store every element with it's index in a hashmap.
 //2. With every iteration, we check if the complement of the current element is already in the hashmap, if no, we simply put the element in hashmap, 
 // if yes, then current element and it's complement, together can make a sum equal to target.
-// So, we return the indexe of the complement and the current index.
+// So, we return the index of the complement and the current index.
 
 class Solution {
     public int[] twoSum(int[] nums, int target) {
