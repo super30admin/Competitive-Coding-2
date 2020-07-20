@@ -1,6 +1,6 @@
 # Comepetitive-Coding-2
 
-# Problem 1:
+# Problem 1: https://leetcode.com/problems/two-sum/
 An array is given in the question and you need to return the indices of two numbers such that they add up to a specific target. assume that there is only one solution for each input and you cannot use the same element twice. 
 
 
