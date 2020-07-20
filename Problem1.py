@@ -20,7 +20,8 @@ class Solution:
 
 sol=Solution()
 nums=[2,7,11,15]
-print(sol.twoSum(nums))
+target=9
+print(sol.twoSum(nums,target))
 
 
 
