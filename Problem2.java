@@ -3,6 +3,9 @@ class Solution{
         int[][] dp = new int[weights][(capacity/10)+1];
         int column = (capacity/10)+1;
         for(int i=0; i<weights.length; i++){
+            dp[i][0] = 0;
+        }
+        for(int i=0; i<weights.length; i++){
             for(int j=0; j<column; j++){
                 if(weights[i] == (j*10)){
                     dp[i][j] = Math.max((values[i]+dp[i][(j*10)-weights[i]]), values[j]);
