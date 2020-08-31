@@ -18,6 +18,10 @@
               4. If we choose the weight, then we will select the rest of the weights from (previous row -  value of weight). The max of (point no  3,point no 4)
                  will be the value of current position
               5. At the end, we will return the last element that tell lus the required o/p
+
+
+    */
+
 #### Repatative Sub Problem.
 
 ![alt text](https://github.com/kumarrishabh0289/airbnb/blob/laxmikant_new/images/Cancel%20by%20host.png)
@@ -25,8 +29,6 @@
 #### Matrxi Approach.
 
 ![alt text](https://github.com/kumarrishabh0289/airbnb/blob/laxmikant_new/images/Cancel%20by%20host.png)
-
-    */
 
 public class Problem2{
     public static void main(String args[]) {
