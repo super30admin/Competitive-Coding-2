@@ -3,8 +3,8 @@
 
 #### Repatative Sub Problem.
 
-![alt text](https://github.com/kumarrishabh0289/airbnb/blob/laxmikant_new/images/Cancel%20by%20host.png)
+![alt text](https://github.com/laxmikantbpandhare/Competitive_Coding_2/blob/master/images/repatative_sub_problem.jpeg)
 
 #### Matrxi Approach.
 
-![alt text](https://github.com/kumarrishabh0289/airbnb/blob/laxmikant_new/images/Cancel%20by%20host.png)
+![alt text](https://github.com/laxmikantbpandhare/Competitive_Coding_2/blob/master/images/matrix_table.jpeg)
