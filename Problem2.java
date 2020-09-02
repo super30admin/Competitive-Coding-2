@@ -1,5 +1,18 @@
 /*
 0/1 Knapsack Problem
+Approach:
+Identifying DP:
+1. Choice: For every item, we have 2 options - to either add it to the sack or not
+2. Optimal: And we are looking to optimize the 'value' function
+
+Decisions to make for every item:
+1. If the item's weight exceeds the current capacity that we are considering, then clearly we cannot this item.
+So, the maximum value that can be obtained is for the item set excluding this item, with the same capacity.
+The capacity hasn't reduced here, as we haven't added item i. (Line 34)
+2. If the item's weight is less than the current capacity, there are 2 options.
+i. Do not choose this item, which is similar to case 1. (Line 31)
+ii. Choose item. Once, item i is chosen, the capacity decreases by that weight - (w-wi),
+and now the problem reduces to the item_set not containing item i, with that reduced capacity. (Line 32)
 */
 
 public class Problem2 {
