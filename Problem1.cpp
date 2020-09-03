@@ -1,22 +1,25 @@
-// T : O(N)/
-//S : O(N)
+//T : O(N)
+//S: O(N)
 
 class Solution {
 public:
-    int longestPalindrome(string s) {
-        unordered_set<char> store;
-        int cnt = 0;
-        for(auto i: s){
-            if(store.find(i)!=store.end()){
-                cnt += 2;
-                store.erase(i);
+    vector<int> twoSum(vector<int>& nums, int target) {
+        
+        map<int, int> store;
+        
+        vector<int> res;
+        for(int i=0;i<nums.size();i++){ //2
+            if(store.find(target-nums[i])!=store.end()){ // 9-2 = 7
+                res.push_back(i);
+                res.push_back(store[target-nums[i]]); 
+                
             }else{
-            store.insert(i);
+                store[nums[i]] = i; //2 // 0
             }
         }
-        if(store.size()>0){
-            return cnt+1;
-        }
-        return cnt;
-        }
+        
+        return res;
+        
+        
+    }
 };
