@@ -19,6 +19,3 @@ def knapsack(W, weights, values, n):
                 dp[i][w] = dp[i-1][w]
 
     return dp[n][W]
-
-"""
-"""
