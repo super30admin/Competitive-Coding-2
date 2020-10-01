@@ -1,4 +1,6 @@
 """
+Question Link : https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
+
 Given max_capeights and values of n items, put these items in a knapsack of capacity max_cap to get the maximum total value in the knapsack. In other max_capords, given tmax_capo integer arrays val[0..n-1] and weights[0..n-1] max_caphich represent values and max_capeights associated max_capith n items respectively. Also given an integer max_cap max_caphich represents knapsack capacity, find out the maximum value subset of val[] such that sum of the max_capeights of this subset is smaller than or equal to max_cap. You cannot break an item, either pick the complete item or don’t pick it (0-1 property).
 """
 
