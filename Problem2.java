@@ -1,6 +1,6 @@
 // Time Complexity : Latest soln O(M*N) - Brute force -// O(M*2^N) - no of elements
 // Space Complexity : O(M*N) - No of elements here but for brute force O(M+N)
-// Did this code successfully run on Leetcode :Yes,for optimal code but  for Brute force - Yes,but TLE
+// Did this code successfully run on Leetcode :Yes,for optimal code
 // Any problem you faced while coding this :No
 
 class Main {
