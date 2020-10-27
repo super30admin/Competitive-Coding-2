@@ -1,3 +1,4 @@
+# Knapsack problem can be optimized using DP. I created a grid and then checked  the recurring relation. Once I got the recurring reelation I updatd the matrix values accordingly.
 # Time Complexity: O(m*n)
 # Space complexity: O(m*n)
 def knapsack(weights,profits,capacity):
