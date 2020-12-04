@@ -1,5 +1,5 @@
 public class TwoSumProblem1 {
-
+// One Pass Hash Table
 	public int[] twoSum(int[] nums, int target) {
 		Map<Integer, Integer> map = new HashMap<>();
 		// base case
