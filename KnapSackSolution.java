@@ -1,3 +1,10 @@
+// Time Complexity : O(n^2)
+// Space Complexity : O(n) | recursive stack space
+// Did this code successfully run on Leetcode : NA
+// Any problem you faced while coding this : couldn't come up with DP solution yet.
+
+
+
 public class KnapSackSolution {
      public static void main(String args[])
     {
