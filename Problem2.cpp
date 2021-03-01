@@ -1,6 +1,6 @@
 /*
 time Complexity -> O(N)where N is size of nums 
-space complexity -> O(1) constant space 
+space complexity -> O(N) constant space 
 
 */
 
