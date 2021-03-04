@@ -1,24 +1,31 @@
-class MissingNo{
-public static int binarySearch(int arr[], int size){
-    int low = 0; int high = size - 1;
-    int mid = 0;
-    while(high-low>=2){
-        mid = low +(high-low)/2;
-        int midIndexdiff = arr[mid] - mid;
-        int lowIndexdiff = arr[low] - low;
-        if(midIndexdiff != lowIndexdiff){
-            high = mid ;}
-        else
-            low = mid ;
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        int n = nums.length;
+        HashMap <Integer,Integer> hashMap = new HashMap<>();
+        int sum;
+        for(int i=0;i<n;i++)
+        {   int complement = target - nums[i];
+         
+            if(hashMap.containsKey(nums[i]))
+            {
+               if(target == 2*nums[i])
+               {
+                   return new int[]{i,hashMap.get(nums[i])};
+               }
+            }
+         if(hashMap.containsKey(complement))
+            {
+               
+                   return new int[]{i,hashMap.get(complement)};
+              
+            }
+            hashMap.put(nums[i],i);
+            
+            
         }
-    //if(arr[high]-arr[low] >= 2)
-    return ((arr[low] + arr[high])/2);
-    //else
-    //return arr.length+1; 
-}
-
-public static void main(String[] args){
-    int arr[] = {1,2};
-    int size = arr.length;
-    System.out.println("Missing no: "+ binarySearch(arr,size));}
+         
+        
+        return new int[]{-1,-1};
+        
+    }
 }
