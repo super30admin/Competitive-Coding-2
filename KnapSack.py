@@ -36,22 +36,7 @@ def knapSackUsingDP(values, weights, totalWeight):
     return dp[-1][-1]
 
 
-def knapSackUsingRecursion(values, weights, totalWeight):
-
-    return helper(values, weights, totalWeight, 0, 0)
-
-def helper(values, weights, currentWeight, value, index):
-
-    if currentWeight <= 0 or index >= len(weights):
-        return value
-
-    else:
-        case1 = helper(values, weights, currentWeight, value, index+1 )
-        case2 = helper(values, weights, currentWeight - weights[index], value + values[index], index + 1)
-    return max(case1, case2)
-
 values = [50,60,100,10]
 weights = [1,1,10,1]
 totalWeight = 10
 print(knapSackUsingDP(values, weights, totalWeight))
-print(knapSackUsingRecursion(values, weights, totalWeight))

@@ -7,9 +7,9 @@ If we know x and target, y can be calculated.
 If y is in the hashmap, we have found the pair of numbers 
 
 #####################################################################
-#Brute Force
-Time Complexity : O(n) where n = number of elements
-Space Complexity : O(n)where n = number of elements
+#Brute Force: Getting all possible pair of elements that result to target
+Time Complexity : O(n^2) where n = number of elements
+Space Complexity : O(1)
 
 #Hashing
 Time Complexity : O(n) where n = number of elements
