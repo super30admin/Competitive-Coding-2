@@ -1,3 +1,6 @@
+# TC: Exponential time 2^N, since we have 2 options i.e. choosing/not choosing for every item, which would result in forming a binary recursion tree. 
+# SC: Space taken by the recursive stack. Probably O(logD) where D is the depth of the recursion tree. 
+
 class Solution:
     def knapSack(self, W, wt, val, n):
         def helper(wt, val, W, idx, n, max_profit):
