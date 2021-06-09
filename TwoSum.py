@@ -1,6 +1,8 @@
 """
 https://leetcode.com/problems/two-sum/
 
+Two-pass Hash table
+
 Time Complexity: O(n)
 Space Complexity: O(n)
 It works on Leetcode.
