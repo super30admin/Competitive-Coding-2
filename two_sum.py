@@ -2,7 +2,7 @@ class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         """
         :rtype: int
-        :time complexity : O(1)
+        :time complexity : O(n)
         :space complexity : O(n)
         """
         di = dict()
