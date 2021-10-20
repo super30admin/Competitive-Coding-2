@@ -1,13 +1,17 @@
 def knapsack(vals, weights, W):
-    taken = weights[0]
-    not_taken  = 0
-    taken_val  = vals[0]
-    not_taken_val = 0
-    mx = max(taken_val, not_taken_val)
-    for i in range(len(vals)):
-        not_taken = max(not_taken, taken)
-        not_taken_val = max(not_taken_val, taken_val)
-        if taken+weights[i] < W:
-            taken += weights[i]
-            taken_val += vals[i]
-    return max(taken_val, not_taken_val)
+    dp = [[0 for x in range(W+1)] for y in range(len(weights)+1)]
+    for i in range(1, W+1):
+        dp[0][i] = 0
+    for i in range(len(weights)+1):
+        dp[i][0] = 0
+    for i in range(1, len(weights)+1):
+        for j in range(1, W+1):
+            if weights[i-1] <= j:
+                dp[i][j] = max(dp[i-1][j], vals[i-1]+dp[i-1][j-weights[i-1]])
+            else:
+                dp[i][j] = dp[i-1][j]
+            
+    return dp[len(weights)][W]
+        
+        
+    
