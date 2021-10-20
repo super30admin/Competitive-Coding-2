@@ -23,7 +23,8 @@ obj = BF_Solution()
 # print(obj.knapSack([60,100,120],[1,2,3],5))
 # print(obj.knapSack([60,10,120],[1,2,3],5))
 
-# DP# Time Complexiety: O(length of weights * targetWeight)
+# DP
+# # Time Complexiety: O(length of weights * targetWeight)
 # Space Complexiety: O(length of weights * targetWeight)
 class DP_Solution:
     def knapSack(self,values,weights,targetWeight):
