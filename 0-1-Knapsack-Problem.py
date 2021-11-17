@@ -1,3 +1,5 @@
+# Time Complexity: O(len of weghts*W)
+# Space Complexity : O(len of weghts*W)
 def knapsack(vals, weights, W):
     dp = [[0 for x in range(W+1)] for y in range(len(weights)+1)]
     for i in range(1, W+1):
