@@ -37,7 +37,7 @@ public class Solution{
 				if(c < w[r-1]) {
 					dp[r][c] = dp[r-1][c];
 				}else {
-					dp[r][c] = Math.max(dp[r-1][c], w[r-1] + dp[r][c - w[r-1]]);
+					dp[r][c] = Math.max(dp[r-1][c], v[r-1] + dp[r][c - w[r-1]]);
 				}
 			}
 		}
