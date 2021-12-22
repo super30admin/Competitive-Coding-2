@@ -1,1 +1,42 @@
 
+def isValidSubsequence(array, sequence):
+ #Time Complexity O(N) where N is length of array
+
+
+
+
+# 	arrIndx = 0
+# 	seqIndx = 0
+	
+# 	while arrIndx<len(array) and seqIndx <len(sequence):
+# 		if array[arrIndx] == sequence[seqIndx]:
+# 			seqIndx = seqIndx + 1
+# 		arrIndx = arrIndx + 1
+# 	return seqIndx ==len(sequence)
+	seqIndx = 0
+	for arrIndx in range(len(array)):
+		if arrIndx<len(array) and seqIndx <len(sequence):
+			if array[arrIndx] == sequence[seqIndx] :
+				seqIndx = seqIndx + 1
+	return seqIndx == len(sequence)
+
+"""Approach:
+
+Considering that subsequence has to maintain an order we will iterate through the entire array.
+To do this we will hold pointer at each sstarting index for array and sequence. at each iteration we 
+check if the element matches the first element in the sequnce: If it does we found the first element of the sewuence so we go the 
+next element in the sequence and again we check for the outer array.
+We return true when the sequence index has reached the end, it means it could find all elememts in array so the index is the end. 
+We return true if index is the end of the sequnce. else we know the numbers didn't match and return a zero.
+Note; Always check for array out of bounds.
+
+
+
+"""
+		
+	
+	
+			
+			
+	
+			
