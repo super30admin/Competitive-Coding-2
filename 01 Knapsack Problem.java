@@ -38,7 +38,7 @@ class Solution {
                     // if the capacity is not less than weight,
                     // then take the max value between the element just above
                     // and (the element present in the same row, the value of element columns before + profits associated with it)
-                    dp[i][j] = Math.max(dp[i - 1][j], dp[i][j - wt[i - 1]] + val[i - 1]);
+                    dp[i][j] = Math.max(dp[i - 1][j], dp[i - 1][j - wt[i - 1]] + val[i - 1]);
                 }
             }
         }
