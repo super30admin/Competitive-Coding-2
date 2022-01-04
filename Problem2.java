@@ -1,3 +1,6 @@
+Timecomplexity : o(n);
+Space complexity :o(n);
+
 class Solution {
     public int[] twoSum(int[] nums, int target) {
         HashMap<Integer,Integer> hm=new HashMap<>();
