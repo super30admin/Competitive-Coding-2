@@ -1,3 +1,7 @@
+/*
+Time complexity : O(n)
+Space complexity: O(n)
+*/
 class Problem1 {
     public int[] twoSum(int[] nums, int target) {
         if(nums == null || nums.length == 0) return new int[] {-1, -1};
