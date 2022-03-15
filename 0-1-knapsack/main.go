@@ -7,6 +7,7 @@ import (
 
 func main() {
 	fmt.Println(knapsack([]int{2, 3, 6}, []int{60, 100, 120}, 10))
+	fmt.Println(knapsack([]int{1, 2, 3}, []int{10, 15, 40}, 6))
 }
 
 // time: o(mn) ----  m: weights, n:cap
@@ -39,7 +40,7 @@ func knapsack(weights, vals []int, cap int) int {
 
 func helper(weights, vals []int, cap int, i int, earnings int) int {
 	// base
-	if cap <= 0 {
+	if cap < 0 {
 		return 0
 	}
 	if cap == 0 || i > len(weights)-1 {
