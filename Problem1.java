@@ -1,7 +1,7 @@
 // 0-1 Knapsack
 
 // Dynamic Programming
-// Time Complexity : O(n^2)
+// Time Complexity : O(n*W)
 // Space Complexity : O(n*W)
 // Did this code successfully run on Leetcode : Yes
 // Any problem you faced while coding this : No
