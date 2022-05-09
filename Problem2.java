@@ -1,11 +1,13 @@
 class Knapsack {
 
-  // Time Complexity :
-  // Space Complexity :
-  // Did this code successfully run on Leetcode :
+  // Time Complexity : O(N*C), N-Number of Items and C --> Capacity(W).
+  // Space Complexity : O(N*C + N) ==> O(N*C).
+  // Did this code successfully run on Leetcode : Yes
   // Any problem you faced while coding this :
 
   // Your code here along with comments explaining your approach
+  // I have used DP - Memoization technique to demonstrate optimized solution
+  // approach from the brute force to DP Memoized.
 
   public int solveKnapsack(int[] val, int[] weights, int capacity) {
     Integer[][] dp = new Integer[val.length][capacity + 1];
