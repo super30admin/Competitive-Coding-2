@@ -1,4 +1,4 @@
-# Hashing-1
+# Competitive-2
 
 ## Problem 1:
 This problem was asked at Amazon
