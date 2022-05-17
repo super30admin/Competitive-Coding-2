@@ -154,6 +154,45 @@ class KnapsackExhaustiveRecursive2 {
     }
 }
 
+/**
+ * 
+ * DP Approach
+ * 
+ * n = weights + 1
+ * m = capacity + 1
+ * time: O(n * m)
+ * space:O(n * m)
+ * 
+ */
+class KnapsackDP {
+    public int maxValue(int[] weights, int[] values, int capacity){
+        if (weights == null || values == null || 
+        weights.length == 0 || values.length == 0) return 0;
+
+        int[][] dp = new int[weights.length+1][capacity+1]; // +1 for 0 row and col
+
+        for (int j = 0; j < dp[0].length; j++) {
+            dp[0][j] = 0;
+        }
+
+        for (int i = 1; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                if (j < weights[i-1]) {  // capacity is less than the weight we can only have the previous weight(s)
+                    dp[i][j] = dp[i-1][j]; // copy previous row
+                } else {
+                    // max(element from prev row same column, 
+                    // element from prev[row][offset column] + the chosen weight corresp value)
+                    dp[i][j] = Math.max(
+                        dp[i-1][j],
+                        dp[i-1][j-(weights[i-1])] + values[i-1]);
+                }
+            }
+        }
+
+        return dp[dp.length-1][dp[0].length-1];
+    }
+}
+
 public class Problem2 {
     public static void main(String[] args) {
         int[] weights = {2, 3, 4, 5};
@@ -163,7 +202,10 @@ public class Problem2 {
         // int result = new KnapsackExhaustiveIterative().maxValue(weights, values, capacity);
         // System.out.println(result);
 
-        int result2 = new KnapsackExhaustiveRecursive2().maxValue(weights, values, capacity);
-        System.out.println(result2);
+        // int result2 = new KnapsackExhaustiveRecursive2().maxValue(weights, values, capacity);
+        // System.out.println(result2);
+
+        int result3 = new KnapsackDP().maxValue(weights, values, capacity);
+        System.out.println(result3);
     }
 }
