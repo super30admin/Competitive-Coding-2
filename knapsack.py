@@ -8,7 +8,7 @@ def knapsack(weights, values, capacity):
         dp[i][0]=0
     for weight in range(1,len(dp)):
         for cap in range(1,len(dp[0])):
-            if cap<weight-1:
+            if cap<weights[weight-1]:
                 dp[weight][cap]=dp[weight-1][cap]
             else:
                 dp[weight][cap]=max(dp[weight-1][cap], values[weight-1]+dp[weight-1][cap-weights[weight-1]])
