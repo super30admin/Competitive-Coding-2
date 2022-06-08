@@ -1,10 +1,10 @@
+//space complexity:o(1)+o(n)
+//time complexity: o(2^n)
 import java.util.*;
 import java.lang.*;
 class Knapsack{
     
-    /*static int max(int a, int b)
-    {
-      return (a > b) ? a : b; } */
+  
     
 static int knapSack(int W, int wt[], int val[], int n)
 {
@@ -21,10 +21,7 @@ static int knapSack(int W, int wt[], int val[], int n)
     
     return Math.max(case1,case2);
     
-    /*return max(val[n - 1]
-					+ knapSack(W - wt[n - 1], wt,
-								val, n - 1),
-					knapSack(W, wt, val, n - 1));*/
+  
 }
 public static void main(String[] args)
 {
