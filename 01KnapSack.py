@@ -1,21 +1,21 @@
-# Time Complexity: O(2^n)
-# Space Complexity: O(1)
+# Time Complexity: O(n*W)
+# Space Complexity: O(n*W)
   
-class Solution:
-    def helper(self, W, wt, val, n, i, maxCost):
-        if i == len(val) or W == 0:
-            return maxCost
-        
-        if wt[i] > W:
-            return self.helper(W, wt, val, n, i+1, maxCost)
-        
-        #no choose
-        case1 = self.helper(W, wt, val, n, i+1, maxCost)
-        #choose
-        case2 = self.helper(W-wt[i], wt, val, n, i+1, maxCost+val[i])
-        
-        return max(case1, case2)
-    #Function to return max value that can be put in knapsack of capacity W.
-    def knapSack(self,W, wt, val, n):
-        
-        return self.helper(W, wt, val, n, 0, 0)
+def knapSack( W, wt, val, n):
+
+
+    dp = [[0 for j in range(W+1)] for i in range(n+1)]
+
+    for i in range(1, n+1):
+        for j in range(1, W+1):
+            if wt[i-1] <= j:
+                dp[i][j] = max(dp[i-1][j], val[i-1]+dp[i-1][j-wt[i-1]])
+            else:
+                dp[i][j] = dp[i-1][j]
+    return dp[n][W]
+
+val = [60, 100, 120]
+wt = [10, 20, 30]
+W = 50
+n = len(val)
+print(knapSack(W, wt, val, n))
