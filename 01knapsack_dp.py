@@ -1,3 +1,10 @@
+"""
+TC  O(N*C). 
+where 'N'is the number of weight element and 'C' is capacity. As for every weight element we traverse through all weight capacities 1<=w<=C.
+SC O(N*C). 
+The use of 2-D array of size 'N*C'.
+"""
+
 # A Dynamic Programming based Python
 # Program for 0-1 Knapsack problem
 # Returns the maximum value that can

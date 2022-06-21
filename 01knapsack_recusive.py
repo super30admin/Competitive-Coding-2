@@ -24,4 +24,12 @@ print(knapSack(W, wt, val, n))
  Competitive-Coding-2 on  master [+] via 🐍 v3.9.12 
 ❯ python3 01knapsack_recusive.py
 65
+
+
+
+TC O(2^n).  As there are redundant subproblems.
+
+SC Auxiliary Space :O(1) + O(N). 
+As no extra data structure has been used for storing values but O(N) auxiliary stack space(ASS) has been used for recursion stack.
+
 """
