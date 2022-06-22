@@ -5,6 +5,7 @@ SC O(N*C).
 The use of 2-D array of size 'N*C'.
 """
 
+
 # A Dynamic Programming based Python
 # Program for 0-1 Knapsack problem
 # Returns the maximum value that can

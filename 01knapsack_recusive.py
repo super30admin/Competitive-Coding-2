@@ -7,7 +7,7 @@ def knapSack(cap, wt, val, n):
     # then this item cannot be included in the optimal solution
     if (wt[n-1] > cap): return knapSack(cap, wt, val, n-1)
     else:
-        # return the maximum of two cases:
+        # return the maximum of two cases: 
         # n'th item included
         # not included
         return max(val[n-1] + knapSack(cap-wt[n-1], wt, val, n-1), # if we include the item, then we reduce C by wt[i-1], and reduce n by 1
