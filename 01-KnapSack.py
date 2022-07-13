@@ -27,3 +27,24 @@ W = 50
 n = len(val)
 print(KnapSack(W,wt,val,n))
 
+"""
+Dynamic Programming solution
+Runtime Complextiy:
+O(n^2) -  because we run two for loops to iterate through rows and columns
+Space Complexity:
+O(n) - because we create a list of capacity W.
+"""
+def KnapSack(W,wt,val,n):
+    dp = [0 for i in range(W+1)]
+    for i in range(1,n+1):
+        for j in range(W,0,-1):
+            if wt[i-1] <= j:
+                dp[j]= max(dp[j], dp[j-wt[i-1]]+val[i-1])
+    return dp[W]
+print("The maximum value that can be put into container of capacity W:")
+val = [60,100,120]
+wt = [10,20,30]
+W = 50
+n = len(val)
+print(KnapSack(W,wt,val,n))
+
