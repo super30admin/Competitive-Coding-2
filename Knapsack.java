@@ -1,3 +1,6 @@
+//Time Complexity:O(2^N)
+//Space Complexity:O(N)
+//Microsoft Interview
 /* A Naive recursive implementation
 of 0-1 Knapsack problem */
 class Knapsack {
