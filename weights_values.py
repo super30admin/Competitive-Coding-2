@@ -1,3 +1,8 @@
+# Time Complexity : O(n^2)
+# Space Complexity : O(max_weight)
+# Did this code successfully run on Leetcode : No(not available on leetcode
+# Any problem you faced while coding this : No
+
 from typing import List
 
 
