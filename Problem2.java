@@ -1,3 +1,8 @@
+// TC : O(nw)
+// SC : O(w)
+// Ran on LC : NA
+// Problems : Concept of Knapsack.
+
 int knapSack(int W, int wt[], int val[], int n) {
     int i, w;
     int [][]K = new int[2][W + 1];
