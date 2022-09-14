@@ -1,3 +1,8 @@
+// TC : O(n)
+// SC : O(n)
+// Ran on LC: Yes
+// Problems: None.
+
 class Solution {
 	public int[] twoSum(int[] nums, int target) {
 		 HashMap<Integer, Integer> map = new HashMap<>();
