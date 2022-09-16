@@ -1,5 +1,5 @@
 """
-S30 FAANMG Problem #29 {Easy }
+ FAANMG Problem #29 {Easy }
 
 
 1. Two Sum

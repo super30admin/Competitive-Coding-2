@@ -1,5 +1,5 @@
 """
-S30 FAANMG Problem #30 {Medium}
+ FAANMG Problem #30 {Medium}
 
 0-1 Knapsack Problem | DP-10
 
