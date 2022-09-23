@@ -1,4 +1,4 @@
-//Approach - 1: Tabular Form
+//Approach - 1: Tabulation method
 //Time Complexity : O(mn)
 //Space Complexity : O(mn)
 
