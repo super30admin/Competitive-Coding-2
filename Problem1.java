@@ -1,3 +1,5 @@
+//space and time complexity => O(mxn) where m is the capacity and n is the length of weights
+
 public class Solution {
     public int knapsackProblem(int[] values, int[] weights, int capacity) {
 
