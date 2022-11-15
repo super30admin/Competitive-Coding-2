@@ -1,3 +1,5 @@
+// Time Complexity : O(n*m) n= length of weight array, m= capacity
+// Space Complexity :O(n*m) 
 class SOlution{
     public int knapSack(int[] weight, int[] values, int capacity){
         int[][] dp=new int[values.length+1][capacity+1];
