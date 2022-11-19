@@ -1,3 +1,5 @@
+#TC: O(n*capactiy)
+#SC: O(n*capactiy)
 weights=[60,7,8,5,50,10]
 values=[600,500,400,200,300,20]
 capacity=60
