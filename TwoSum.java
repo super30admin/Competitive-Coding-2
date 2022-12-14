@@ -1,5 +1,5 @@
 // Time Complexity: O(n)
-// Space Complexity = O(1)
+// Space Complexity = O(n)
 
 /*
  * here we are going through the array and storing the difference in hashmap

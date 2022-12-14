@@ -1,3 +1,11 @@
+// Time Complexity: O(mn) capacity* weights.length
+// Space Complexity = O(mn) 
+
+/*
+ * here we create a martix with the weights as y axis and capacity as the x axis.
+ * the values we get are the max values we can form using the weight and given capacity.
+ */
+
 public class Knapsack {
     public static int knapsack(int[] values, int[] weights, int capacity){
         if(weights == null || weights.length == 0) return 0;
