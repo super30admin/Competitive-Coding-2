@@ -25,4 +25,10 @@ class Solution {
         }
         return new int[]{-1, -1};
     }
+
+    public static void main(String args[]) {
+        Solution s = new Solution();
+        int[] nums = {2,7,11,15};
+        System.out.println(s.twoSum(nums, 9)); // [0, 1]
+    }
 }
