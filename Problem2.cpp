@@ -1,4 +1,6 @@
 class Solution {
+    // TC - O(n)
+    // SC - O(n)
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
         
