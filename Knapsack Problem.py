@@ -4,6 +4,11 @@
 # Returns the maximum value that can
 # be put in a knapsack of capacity W
 
+# Time Complexity : O(mn) m = len(weights), n = W
+# Space Complexity : O(mn)
+# Did this code successfully run on Leetcode : yes
+# Any problem you faced while coding this : no
+
 
 def knapSack(W, weights, profit):
 	
