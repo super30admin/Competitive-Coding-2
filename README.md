@@ -1,3 +1,3 @@
-# Competitive-Coding-2
-Knapsack problem
-Two sum
+### Competitive-Coding-2
+## Knapsack problem
+## Two sum
