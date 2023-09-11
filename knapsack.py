@@ -1,6 +1,10 @@
 # weight=[10,20,30]
 # profit=[60,100,120]
 # C= 50
+
+# Time Complexity: O(m*n)
+# Space Complexity: O(m*n)
+
 def knanpsack (self,weight, C, profit):
     row= len(weight)+1
     col = C +1
