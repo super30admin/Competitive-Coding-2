@@ -17,7 +17,6 @@ class Solution:
             return 0
         
         ct = 0
-        dups=0
         uniques = {}
 
         for num in nums:
