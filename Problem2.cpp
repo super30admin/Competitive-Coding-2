@@ -1,7 +1,7 @@
 //Question: 2.Knapsack problem
 
-// Time Complexity : 
-// Space Complexity : 
+// Time Complexity : O(m*n)
+// Space Complexity : O(m*n)
 // Any problem you faced while coding this : no.
 // Did this code successfully run on Leetcode : yes
 
