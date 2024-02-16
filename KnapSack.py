@@ -31,13 +31,3 @@ def knapSackDP(C, wt, val, n):
     return Wt[n][C]
 
 # end of function knapSack
-
-
-# Driver Code
-if __name__ == '__main__':
-    profit = [1, 2, 3]
-    weight = [4, 5, 1]
-    C = 4
-    n = len(profit)
-    print(knapSack(C, weight, profit, n, 0))
-    print(knapSackDP(C, weight, profit, n))
