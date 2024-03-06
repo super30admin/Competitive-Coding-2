@@ -12,20 +12,20 @@ def knapSack(C, wt, val, n, idx):
     return max(Wt1, Wt2)
 
 
-def knapSackDP(C, wt, val, n):
-    K = [[0 for x in range(C + 1)] for x in range(n + 1)]
+# def knapSackDP(C, wt, val, n):
+#     K = [[0 for x in range(C + 1)] for x in range(n + 1)]
 
-    for i in range(n + 1):
-        for w in range(C + 1):
-            if i == 0 or w == 0:
-                Wt[i][w] = 0
-            elif wt[i - 1] <= w:
-                Wt[i][w] = max(val[i - 1] + Wt[i - 1][w - wt[i - 1]], Wt[i - 1][w])
-            else:
-                Wt[i][w] = Wt[i - 1][w]
-    print(Wt)
+#     for i in range(n + 1):
+#         for w in range(C + 1):
+#             if i == 0 or w == 0:
+#                 wt[i][w] = 0
+#             elif wt[i - 1] <= w:
+#                 wt[i][w] = max(val[i - 1] + wt[i - 1][w - wt[i - 1]], wt[i - 1][w])
+#             else:
+#                 wt[i][w] = wt[i - 1][w]
+#     print(wt)
 
-    return Wt[n][C]
+#     return wt[n][C]
 
 
 # Driver Code
@@ -35,4 +35,4 @@ if __name__ == "__main__":
     C = 4
     n = len(profit)
     print(knapSack(C, weight, profit, n, 0))
-    print(knapSackDP(C, weight, profit, n))
+    # print(knapSackDP(C, weight, profit, n))
