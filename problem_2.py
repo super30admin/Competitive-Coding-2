@@ -23,5 +23,4 @@ def knapsack(weight, values, capacity):
 
     return dp[capacity] 
 
-
 print(knapsack(weight, values, capacity))
