@@ -1,3 +1,7 @@
 # Competitive-Coding-2
 
-Please submit the interview problems posted in slack channel here. The problems and statements are intentionally not shown here so that students are not able to see them in advance 
+Problem - 1
+TWO SUM: https://leetcode.com/problems/two-sum/description/
+
+Problem - 2
+0/1 KNAPSACK: https://www.geeksforgeeks.org/0-1-knapsack-problem-dp-10/
