@@ -1,0 +1,17 @@
+#Pascal's Triangle
+
+
+class Solution:
+    def generate(self, numRows: int) -> List[List[int]]:
+        if numRows == 0:
+            return [[]]
+        
+        retList = [[1]]
+
+        for i in range(numRows - 1):
+            temp = [0] + retList[-1] + [0]
+            tempRow = []
+            for j in range(len(retList[-1]) + 1):
+                tempRow.append(temp[j] + temp[j+1])
+            retList.append(tempRow)
+        return retList
