@@ -1,0 +1,90 @@
+Competitive coading 2:
+
+problem 1: 
+
+# Knapsack problem 
+
+aggressive approach:
+
+class Solution:
+	def kmapsack(self,capacity, profit,weights,n):
+		return self.__helper(capacity,profit,weights,n,0,0)
+	
+	def __helper(self,remaining_capacity,profit,weights,n,i,max_profit):
+		
+		#base
+		if i >= n or remaining_capacity == 0:
+			return max_profit
+
+		#logic
+		if weights[i] > remaining_capacity:
+			return self.helper(self,remaining_capacity,profit,weights,n,i+1,max_profit)
+
+		#choose
+		choose = self.helper(self,remaining_capacity - weight[i],profit,weights,n,i+1,max_profit[i])
+
+		#not-choose
+		not_choose = self.helper(self,remaining_capacity,profit,weights,n,i+1,max_profit)
+
+		return max(choose, not_choose)
+
+
+
+actual sol:
+
+weight = [1, 2, 3]
+values = [6,10,12]
+capacity = 5
+
+# Time complexity O(n^2)
+# Space complexity O(n)
+
+def knapsack(weight, values, capacity):
+    if not weight or not values: # edge cases 
+        return -1 
+    if capacity <= 0:
+        return 0
+    col = capacity + 1 
+    row = len(weight) + 1
+
+    # Using 1 D array
+    dp = [0] * (capacity + 1)
+
+    for i in range(len(weight)):
+        # travers in reverse 
+        for j in range(capacity, weight[i] - 1, -1):
+            dp[j] = max(dp[j], dp[j - weight[i]] + values[i])
+
+    return dp[capacity] 
+
+print(knapsack(weight, values, capacity))
+
+
+
+
+
+
+
+
+
+
+problem 2: 
+
+two sum:
+
+
+Time Complexity: 𝑂(𝑛)
+Space Complexity: O(n)
+
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        if nums == None or len(nums)== 0:
+            return []
+        nMap={}
+        for i in range(len(nums)):
+            diff = target - nums[i]
+            if diff in nMap:
+                return [nMap[diff],i]
+            else:
+                nMap[nums[i]] = i
+        return []  
