@@ -1,0 +1,21 @@
+// Time Complexity : O(n) where n = size of array nums
+// Space Complexity : O(n)
+// Did this code successfully run on Leetcode : Yes
+
+// Used a HashMap to store the complement and index of a number in the array if not present already. 
+// If we find the number which has its complemet in the map return both the indices.
+
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int i = 0; i < nums.length; i++){
+            int complement = target - nums[i];
+            if(!map.containsKey(nums[i])){
+                map.put(complement, i);
+            }else{
+                return new int[]{map.get(nums[i]), i};
+            }
+        }
+        return new int[]{};
+    }
+}
