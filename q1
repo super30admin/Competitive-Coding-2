@@ -1,0 +1,27 @@
+//time complexity : O(n)
+//space complexity :O(n)
+// run successfully in leetcode : Y
+
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        map<int,int> mymap;
+        vector<int> temp(2);
+        for(int i=0;i<nums.size();i++)
+        {
+            int x=nums[i];
+            if(mymap.find(target-x)!=mymap.end())
+            {
+                temp[0]=mymap[target-x];
+                temp[1]=i;
+                break;
+            }
+            else
+            {
+                mymap[x]=i;
+            }
+        }
+        return temp;
+    }
+};
