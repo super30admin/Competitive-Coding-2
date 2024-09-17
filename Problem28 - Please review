@@ -1,0 +1,24 @@
+// Time Complexity :O(n)
+// Space Complexity :O(n)
+// Did this code successfully run on Leetcode :Yes
+
+
+class Solution {
+    func twoSum(_ nums: [Int], _ target: Int) -> [Int] {
+        var tab = [Int: Int]()
+        for i: Int in nums.indices {
+            if tab[nums[i]] == nil {
+                tab[nums[i]] = i
+            }
+        }
+        for i: Int in nums.indices {
+            var n = nums[i]   
+            var diff = target - n
+            if let i2 = tab[diff], i2 != i {
+                return [i, i2]
+            }
+        }
+        return [Int]()
+        
+    }
+}
