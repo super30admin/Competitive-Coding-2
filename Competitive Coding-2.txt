@@ -1,0 +1,26 @@
+All test cases Passed
+Pascal's Triangle
+    def generate(self, numRows: int) -> List[List[int]]:
+        l=[[1]]
+        l2=[]
+        for i in range(1,numRows):
+            c=[0]+l[i-1]+[0]
+            for j in range(0,len(c)-1):
+                l2.append(c[j]+c[j+1])
+            l.append(l2)
+            l2=[]
+        return l
+ K-diff Pairs in an Array
+class Solution:
+    def findPairs(self, nums: List[int], k: int) -> int:
+        dict1={}
+        l1=[]
+        count=0
+        for i in range(0,len(nums)):
+                dict1[nums[i]]=i
+        for i in range(0,len(nums)):
+                if nums[i]-k in dict1 and dict1[nums[i]-k]!=i:
+                    if [nums[i],nums[i]-k] not in l1:
+                        l1.append([nums[i],nums[i]-k])
+                        count=count+1
+        return count
