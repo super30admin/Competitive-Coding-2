@@ -1,0 +1,26 @@
+#time complexity-O(N)
+#space Complexity-O(1)
+#we first add the elements of nums with their indices on to a hash map. then we iterate over a list and get the complement of the target. we check if the complement
+# is there in the dictonary and also if the complement is not present in the same index(same element check) we then append the output to a list and return the output
+
+
+class Solution(object):
+    def twoSum(self, nums, target):
+        l=[]
+        dict1={}
+        for i in range(0,len(nums)):
+            dict1[nums[i]]=i
+
+        for i in range(0,len(nums)):
+            diff=target-nums[i]
+            if (diff in dict1):
+                if (dict1[diff]!=i) :
+                    l.append(i)
+                    l.append(dict1[diff])
+                    return l
+            else:
+                continue
+        return -1
+
+
+        
