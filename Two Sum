@@ -1,0 +1,25 @@
+Approach 1 : Brute Force . using two loops and iterate and check the sum is equal to target
+Time Complexity : O(n*2)
+Space Complexity : O(1) -- > Result Array 
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        for i in range (len(nums)):
+            for j in range (i+1,len(nums)):
+                if (nums[j]+nums[i]==target):
+                    return i,j
+ Approach 2 : Two Pointer Approach
+ Time Complexity :O(nlogn) 
+ Space Complexity : O(1). Given result Array
+ class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        ## Two Pointer Approach 
+        slow,fast=0,(len(nums)-1)
+        nums.sort()
+        while (slow<=fast):
+            if (nums[slow]+nums[fast]==target):
+                return [slow,fast]
+            if nums[slow]+nums[fast]<target:
+                slow+=1
+            else:
+                fast-=1
+ 
