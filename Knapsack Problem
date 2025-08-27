@@ -1,0 +1,24 @@
+class Solution:
+
+    @staticmethod
+    def findMax(weights, profit, totalCapacity):
+        return Solution.helper(weights, profit, 0, totalCapacity)
+
+    @staticmethod
+    def helper(weights, profit, i, capacity):
+        if i >= len(weights):
+            return 0
+
+        case0 = Solution.helper(weights, profit, i + 1, capacity)
+
+        case1 = 0
+        if capacity - weights[i] >= 0:
+            case1 = profit[i] + Solution.helper(weights, profit, i + 1, capacity - weights[i])
+
+        return max(case0, case1)
+
+# Test
+items = [10, 20, 30, 40]
+profit = [130, 110, 170, 190]
+capacity = 50
+print(Solution.findMax(items, profit, capacity))  # Expected: 300
