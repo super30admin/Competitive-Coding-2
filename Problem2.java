@@ -8,7 +8,7 @@ public class Main {
      * Solves the 0/1 Knapsack problem using Dynamic Programming.
      * Approach: 1D Array Space-Optimized Bottom-Up DP.
      *
-     * Time Complexity: O(N * W)
+     * Time Complexity: O(N)
      * where N is the number of items and W is the maximum capacity.
      * We iterate through each item and for each item, we iterate through the capacity.
      *
